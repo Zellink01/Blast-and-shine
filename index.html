@@ -40,6 +40,23 @@
       font-size: 18px;
       margin: 10px 0;
     }
+    .gallery {
+      text-align: center;
+    }
+    .gallery-item {
+      margin: 10px;
+      display: inline-block;
+    }
+    .gallery img {
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .caption {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #555;
+    }
     footer {
       background-color: #0077cc;
       color: white;
@@ -51,6 +68,9 @@
         display: block;
         margin: 10px 0;
       }
+      .gallery img {
+        width: 90%;
+      }
     }
   </style>
 </head>
@@ -61,6 +81,7 @@
   <p>Professional Pressure Washing in Springtown, TX</p>
   <nav>
     <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -72,6 +93,24 @@
     <li>Siding Washing</li>
     <li>Deck Power Washing</li>
   </ul>
+</section>
+
+<section id="gallery" class="section gallery">
+  <h2>Our Work</h2>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center;">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1616627985603-dc07b8e6db57?auto=format&fit=crop&w=600&q=80" alt="Cleaned driveway">
+      <div class="caption">Driveway - After Pressure Washing</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1598514982884-fba50ed9e158?auto=format&fit=crop&w=600&q=80" alt="Before and after siding">
+      <div class="caption">Siding - Before and After</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1616627985399-6b116ae133d7?auto=format&fit=crop&w=600&q=80" alt="Deck pressure washing">
+      <div class="caption">Deck - Restored with Power Washing</div>
+    </div>
+  </div>
 </section>
 
 <section id="contact" class="section contact">
